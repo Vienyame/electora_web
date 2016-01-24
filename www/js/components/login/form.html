@@ -1,0 +1,30 @@
+<ion-view>
+<ion-content class="login" layout="column" layout-align="center center">
+<h3 class="title-header"><img class="title-image" src="img/SII.png" width="43" height="23"/> Bienvenue sur iPMP Mobile</h1>
+
+<div class="card">
+    <label class="item-input">
+        <span class="input-label" style="text-align: right;"><b>Compte</b></span>
+        <input type="text" ng-model="loginCtrl.login.username" placeholder="Utilisateur">
+    </label>
+    <label class="item-input">
+        <span class="input-label" style="text-align: right;"><b>Mot de passe</b></span>
+        <input type="password" ng-model="loginCtrl.login.password" placeholder="Saisir votre mot de passe">
+    </label>
+    <div layout="row" class="item-input">
+        <span class="input-label" style="text-align: right;"><b>Agence</b></span>
+        <md-select placeholder="Agence" ng-model="loginCtrl.login.agency" style="padding: 0;">
+            <md-option ng-repeat="agency in loginCtrl.agencies" ng-value="agency">{{agency.name}}</md-option>
+        </md-select>
+    </div>
+<!--     <div layout="row" layout-align="center center">
+        <ion-checkbox>Se souvenir de moi</ion-checkbox>
+    </div> -->
+    <p style="color: red; text-align: center;">{{loginCtrl.errorMsg}}</p>
+    <md-progress-linear md-mode="indeterminate"ng-show="loginCtrl.loading"></md-progress-linear>
+</div>
+<a class="button button-block button-positive" ng-click="loginCtrl.onLogin()">Se connecter</a>
+
+<p class="title-footer">Services proposé par <a href="#" ng-click="loginCtrl.openLink(loginCtrl.sii)"><b>Groupe SII</b></a></p>
+</ion-content>
+</ion-view>
