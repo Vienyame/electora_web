@@ -1,6 +1,8 @@
 <ion-view>
 <ion-content class="login" layout="column" layout-align="center center">
-<h3 class="title-header"><img class="title-image" src="img/SII.png" width="43" height="23"/> Bienvenue sur iPMP Mobile</h1>
+<!--
+<h3 class="title-header"><img class="title-image" src="img/SII.png" width="43" height="23"/> Bienvenue sur Electora</h3>
+-->
 
 <div class="card">
     <label class="item-input">
@@ -12,10 +14,10 @@
         <input type="password" ng-model="loginCtrl.login.password" placeholder="Saisir votre mot de passe">
     </label>
     <div layout="row" class="item-input">
-        <span class="input-label" style="text-align: right;"><b>Agence</b></span>
-        <md-select placeholder="Agence" ng-model="loginCtrl.login.agency" style="padding: 0;">
-            <md-option ng-repeat="agency in loginCtrl.agencies" ng-value="agency">{{agency.name}}</md-option>
-        </md-select>
+        <span class="input-label" style="text-align: right;"><b>Profil</b></span>
+        <select placeholder="Agence" ng-model="loginCtrl.login.profil" style="padding: 0;">
+            <option ng-repeat="profil in loginCtrl.profils" ng-value="profil">{{profil.name}}</option>
+        </select>
     </div>
 <!--     <div layout="row" layout-align="center center">
         <ion-checkbox>Se souvenir de moi</ion-checkbox>
@@ -25,6 +27,5 @@
 </div>
 <a class="button button-block button-positive" ng-click="loginCtrl.onLogin()">Se connecter</a>
 
-<p class="title-footer">Services proposé par <a href="#" ng-click="loginCtrl.openLink(loginCtrl.sii)"><b>Groupe SII</b></a></p>
 </ion-content>
 </ion-view>

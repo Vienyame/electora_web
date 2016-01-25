@@ -1,16 +1,25 @@
-angular.module('ipmpMobile.components.login')
-.controller('LoginController', function($ionicModal, $location, VIEWS, AgencyService, LoginService, AuthService, ConfigService) {
+angular.module('electora.login')
+.controller('LoginController', function($ionicModal, $location, AgencyService, LoginService, AuthService) {
   var loginCtrl = this;
-  
+
   loginCtrl.errorMsg = '';
-  loginCtrl.agencies = AgencyService.list();
-  loginCtrl.login = {
-    agency: loginCtrl.agencies[0]
-  };
+    loginCtrl.login = {
+      //profil: loginCtrl.profils[0]
+    };
+  loginCtrl.profils = [
+    {
+      "name":"Membre",
+      "key":"M"
+    },
+    {
+      "name":"Directeur",
+      "key":"D"
+    }
+  ];
 
   loginCtrl.loading = false;
   loginCtrl.sii = "http://www.groupe-sii.com";
-  
+
   loginCtrl.onLogin = function() {
     if (loginCtrl.login.agency.value.length === 0) {
       AuthService.setError('IP agence non renseigné');

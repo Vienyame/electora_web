@@ -22,9 +22,12 @@ var paths = {
     './www/lib/ngCordova/dist/ng-cordova.js',
     'cordova.js',
     './www/js/app.js',
-    './www/js/controllers.js',
     './www/js/components/**/app.js',
-    './www/js/components/**/src/**/*.js',
+    //'./www/js/common/**/app.js',
+    './www/js/controllers.js',
+    //'./www/js/common/**/**/*.js',
+    //'./www/js/config/**/**/*.js',
+    './www/js/components/**/src/*.js',
     '!./www/js/components/**/src/**/*.specs.js'
   ],
   specs: [

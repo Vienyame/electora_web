@@ -1,4 +1,4 @@
-angular.module('ipmpMobile.components.login')
+angular.module('electora.login')
   .service('AgencyService', function() {
   return {
     list: function() {

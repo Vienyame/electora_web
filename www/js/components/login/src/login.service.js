@@ -1,10 +1,9 @@
-angular.module('ipmpMobile.components.login')
-.service('LoginService', function($http, CONFIG, VIEWS, AuthService, ConfigService) {
+angular.module('electora.login')
+.service('LoginService', function($http, AuthService) {
   return {
     authentification: function(objs) {
-      ConfigService.setServerIP(objs.agencyIP);
       return $http({
-        url: ConfigService.getServerIP() + '/login',
+        url: 'localhost:3010/login',
         method: "POST",
         data: JSON.stringify({
           'login': objs.login,
@@ -14,7 +13,7 @@ angular.module('ipmpMobile.components.login')
     },
 
     logout: function() {
-      return $http.get(ConfigService.getServerIP() + '/logout').then(function success(data) {
+      return $http.get('localhost:3010/logout').then(function success(data) {
         AuthService.clearToken();
         return data;
       });

@@ -4,3 +4,12 @@
 node_modules/
 platforms/
 plugins/
+.idea/.name
+.idea/electora_web.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/encodings.xml
+.idea/jsLibraryMappings.xml
+.idea/libraries/electora_web_node_modules.xml

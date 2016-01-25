@@ -3,10 +3,10 @@
 describe('controllers', function(){
   var scope;
 
-  beforeEach(module('ipmpMobile'));
+  beforeEach(module('electora'));
 
   beforeEach(inject(function($rootScope) {
     scope = $rootScope.$new();
   }));
-  
+
 });
