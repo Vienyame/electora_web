@@ -1,0 +1,67 @@
+[
+  {
+    "_id":"01",
+    "dptName":"Département de l'Oueme",
+    "nbrElecteur":578616
+  },
+  {
+    "_id":"02",
+    "dptName":"Département du Zou",
+    "nbrElecteur":416515
+  },
+  {
+    "_id":"03",
+    "dptName":"Département du Couffo",
+    "nbrElecteur":312088
+  },
+  {
+    "_id":"04",
+    "dptName":"Département de la Donga",
+    "nbrElecteur":206880
+  },
+  {
+    "_id":"05",
+    "dptName":"Département du Mono",
+    "nbrElecteur":243533
+  },
+  {
+    "_id":"06",
+    "dptName":"Département d'Alibori",
+    "nbrElecteur":373294
+  },
+  {
+    "_id":"07",
+    "dptName":"Département de l'Atacora",
+    "nbrElecteur":308374
+  },
+  {
+    "_id":"08",
+    "dptName":"Département de l'Atlantique",
+    "nbrElecteur":725579
+  },
+  {
+    "_id":"09",
+    "dptName":"Département du Borgou",
+    "nbrElecteur":537576
+  },
+  {
+    "_id":"10",
+    "dptName":"Département des Collines",
+    "nbrElecteur":374663
+  },
+  {
+    "_id":"11",
+    "dptName":"Département du Littoral",
+    "nbrElecteur":395072
+  },
+  {
+    "_id":"12",
+    "dptName":"Département du Plateau",
+    "nbrElecteur":270922
+  },
+  {
+    "_id":"13",
+    "dptName":"Etranger",
+    "nbrElecteur":43811
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "_id":"01",
+    "arrondissement":"Azowlisse",
+    "villages":[
+      "Kadébou-Zounmè",
+      "Klogbomey",
+      "Kpodédji",
+      "Kpota",
+      "Saoro",
+      "Sissèkpa",
+      "Todé",
+      "Abéokouta",
+      "Agué-Milahin",
+      "Akouèhan-Tohoué",
+      "Gbada",
+      "Gbada Kpota",
+      "Gbédogo-Oudanou",
+      "Gbékandji",
+      "Houèda",
+      "Houssa"
+    ]
+  },
+  {
+    "_id":"02",
+    "arrondissement":"Adjarra 1",
+    "villages":[
+      "Adovié"
+    ]
+  },
+  {
+    "_id":"03",
+    "arrondissement":"Cana II",
+    "villages":[
+      "Agouna"
+    ]
+  },
+  {
+    "_id":"04",
+    "arrondissement":"Djakotomey II",
+    "villages":[
+      "Babohoué"
+    ]
+  },
+  {
+    "_id":"05",
+    "arrondissement":"Bougou",
+    "villages":[
+      "Bougou  Fana"
+    ]
+  },
+  {
+    "_id":"06",
+    "arrondissement":"Oumako",
+    "villages":[
+      "Djacoté"
+    ]
+  }
+]

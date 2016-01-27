@@ -27,7 +27,7 @@ var paths = {
     './www/js/controllers.js',
     //'./www/js/common/**/**/*.js',
     //'./www/js/config/**/**/*.js',
-    './www/js/components/**/src/*.js',
+    './www/js/components/**/**/*.js',
     '!./www/js/components/**/src/**/*.specs.js'
   ],
   specs: [

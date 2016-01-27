@@ -13,7 +13,9 @@ angular.module('electora', [
   'electora.config',
   'electora.controllers',
   'electora.login',
-  'electora.register'
+  'electora.register',
+  'electora.map',
+  'electora.program'
 ])
 
   .run(function ($ionicPlatform) {
@@ -54,33 +56,6 @@ angular.module('electora', [
         views: {
           'menuContent': {
             templateUrl: 'templates/browse.html'
-          }
-        }
-      })
-      .state('app.playlists', {
-        url: '/playlists',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/playlists.html',
-            controller: 'PlaylistsCtrl'
-          }
-        }
-      })
-      .state('app.single', {
-        url: '/playlists/:playlistId',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/playlist.html',
-            controller: 'PlaylistCtrl'
-          }
-        }
-      })
-      .state('app.map', {
-        url: '/map',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/map.html',
-            controller: 'MapCtrl'
           }
         }
       })
