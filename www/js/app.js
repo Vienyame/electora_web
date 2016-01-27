@@ -15,7 +15,8 @@ angular.module('electora', [
   'electora.login',
   'electora.register',
   'electora.map',
-  'electora.program'
+  'electora.program',
+  'electora.agenda'
 ])
 
   .run(function ($ionicPlatform) {
@@ -61,5 +62,5 @@ angular.module('electora', [
       })
     ;
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/playlists');
+    $urlRouterProvider.otherwise('/app/agenda');
   });

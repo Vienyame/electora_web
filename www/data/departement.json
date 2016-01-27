@@ -2,27 +2,43 @@
   {
     "_id":"01",
     "dptName":"Département de l'Oueme",
-    "nbrElecteur":578616
+    "nbrElecteur":578616,
+    "arrondissement":[
+      "01",
+      "02"
+    ]
   },
   {
     "_id":"02",
     "dptName":"Département du Zou",
-    "nbrElecteur":416515
+    "nbrElecteur":416515,
+    "arrondissement":[
+      "03"
+    ]
   },
   {
     "_id":"03",
     "dptName":"Département du Couffo",
-    "nbrElecteur":312088
+    "nbrElecteur":312088,
+    "arrondissement":[
+      "04"
+    ]
   },
   {
     "_id":"04",
     "dptName":"Département de la Donga",
-    "nbrElecteur":206880
+    "nbrElecteur":206880,
+    "arrondissement":[
+      "05"
+    ]
   },
   {
     "_id":"05",
     "dptName":"Département du Mono",
-    "nbrElecteur":243533
+    "nbrElecteur":243533,
+    "arrondissement":[
+      "06"
+    ]
   },
   {
     "_id":"06",

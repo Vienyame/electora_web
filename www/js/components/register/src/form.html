@@ -7,23 +7,24 @@
     <div class="card">
       <label class="item-input">
         <span class="input-label" style="text-align: right;"><b>Nom</b></span>
-        <input type="text" ng-model="registerCtrl.register.lastname" placeholder="Utilisateur">
+        <input type="text" ng-model="registerCtrl.register.lastname" placeholder="Nom">
       </label>
       <label class="item-input">
         <span class="input-label" style="text-align: right;"><b>Prénom</b></span>
-        <input type="text" ng-model="registerCtrl.register.firstname" placeholder="Utilisateur">
+        <input type="text" ng-model="registerCtrl.register.firstname" placeholder="Prénom(s)">
       </label>
       <label class="item-input">
         <span class="input-label" style="text-align: right;"><b>Compte</b></span>
-        <input type="text" ng-model="registerCtrl.register.username" placeholder="Utilisateur">
+        <input type="text" ng-model="registerCtrl.register.username" placeholder="Email">
       </label>
       <label class="item-input">
         <span class="input-label" style="text-align: right;"><b>Mot de passe</b></span>
         <input type="password" ng-model="registerCtrl.register.password" placeholder="Saisir votre mot de passe">
       </label>
+
       <div layout="row" class="item-input">
         <span class="input-label" style="text-align: right;"><b>Profil</b></span>
-        <select placeholder="Agence" ng-model="registerCtrl.register.profil" style="padding: 0;">
+        <select placeholder="Profil" ng-model="registerCtrl.register.profil" style="padding: 0;">
           <option ng-repeat="profil in registerCtrl.profils" ng-value="profil">{{profil.name}}</option>
         </select>
       </div>
@@ -31,7 +32,7 @@
               <ion-checkbox>Se souvenir de moi</ion-checkbox>
           </div> -->
       <p style="color: red; text-align: center;">{{registerCtrl.errorMsg}}</p>
-      <md-progress-linear md-mode="indeterminate"ng-show="registerCtrl.loading"></md-progress-linear>
+      <md-progress-linear md-mode="indeterminate" ng-show="registerCtrl.loading"></md-progress-linear>
     </div>
     <a class="button button-block button-positive" ng-click="registerCtrl.onRegister()">Valider</a>
 

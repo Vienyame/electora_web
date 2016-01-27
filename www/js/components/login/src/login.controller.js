@@ -1,5 +1,5 @@
 angular.module('electora.login')
-  .controller('LoginController', function ($scope, $ionicModal, $location, AgencyService, LoginService, AuthService,ArrondissementService,DepartementService) {
+  .controller('LoginController', function ($scope, $ionicModal, $location, AgencyService, LoginService, AuthService,ArrondissementService,DepartementService,ThemeService, EvenementService) {
     var loginCtrl = this;
 
     ArrondissementService.getArdmt()
@@ -12,6 +12,15 @@ angular.module('electora.login')
         console.log(obj)
       });
 
+    ThemeService.getTheme()
+      .then(function(obj) {
+        console.log(obj)
+      });
+
+    EvenementService.getEvent()
+      .then(function(obj) {
+        console.log(obj)
+      });
 
 
     // Create the login modal that we will use later
