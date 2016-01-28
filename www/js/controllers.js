@@ -1,7 +1,7 @@
 angular.module('electora.controllers', [])
 
     .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
-
+ /*
         // With the new view caching in Ionic, Controllers are only called
         // when they are recreated or on app start, instead of every page change.
         // To listen for when this page is active (for example, to refresh data),
@@ -13,7 +13,7 @@ angular.module('electora.controllers', [])
         $scope.loginData = {};
 
         // Create the login modal that we will use later
-        $ionicModal.fromTemplateUrl('templates/login.html', {
+        $ionicModal.fromTemplateUrl('js/components/login/src/login.html', {
             scope: $scope
         }).then(function (modal) {
             $scope.modal = modal;
@@ -39,10 +39,11 @@ angular.module('electora.controllers', [])
                 $scope.closeLogin();
             }, 1000);
         };
+        */
     })
 
 
-
+/*
     .controller('MapCtrl', function ($scope, $state, $cordovaGeolocation) {
 
         var options = {
@@ -81,4 +82,4 @@ angular.module('electora.controllers', [])
                 console.log("Could not get location");
             }
         )
-    });
+    });*/

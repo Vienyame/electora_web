@@ -9,9 +9,10 @@ angular.module('electora.agenda',[])
         url: '/agenda',
         views: {
           'menuContent': {
-            templateUrl: 'js/components/agenda/src/agenda.html'
+            templateUrl: 'js/components/agenda/src/agenda.html',
+            controller: 'AgendaController',
+            $$controllerAs:'agendaCtrl'
           }
         }
       })
-
   });

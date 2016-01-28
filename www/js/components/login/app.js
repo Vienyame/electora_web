@@ -3,7 +3,7 @@ angular.module('electora.login', [])
   .config(function($stateProvider) {
     $stateProvider
 
-      .state('login', {
+      .state('app.login', {
         url: '/login',
         abstract: true,
         templateUrl: 'js/components/login/src/index.html'

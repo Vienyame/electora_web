@@ -5,7 +5,7 @@ angular.module('electora.register',[])
   .config(function($stateProvider) {
     $stateProvider
 
-      .state('register', {
+      .state('app.register', {
         url: '/register',
         abstract: true,
         templateUrl: 'js/components/register/src/index.html'

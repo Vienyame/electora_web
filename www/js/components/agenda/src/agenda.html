@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<ion-view view-title="Agenda">
+  <ion-content>
+    <div>{{agendaCtrl.Events[0]}}</div>
 
-</body>
-</html>
+    <div ng-repeat="event in agendaCtrl.Events">
+      <div class="card">
+        <div class="item item-divider">
+          {{event.name}}
+        </div>
+        <div class="item item-text-wrap">
+          This is a basic Card with some text.
+        </div>
+        <div class="item item-divider">
+          I'm a Footer in a Card!
+        </div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
