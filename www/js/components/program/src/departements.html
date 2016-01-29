@@ -1,0 +1,43 @@
+<ion-view view-title="Liste des départements">
+  <ion-content style="background-color: silver">
+
+    <div ng-repeat="dept in programCtrl.departements">
+
+
+      <div class="list card">
+
+        <div class="item item-avatar item-positive">
+          <div class="title" style="font-weight: bold; font-size: 20px;">{{dept.dptName}}</div>
+          <br>
+
+          <p class=" ">{{dept.nbrElecteur}} votants</p>
+        </div>
+
+        <div class="item " ng-repeat="arr in dept.arrondissement">
+          <p>
+            <span>{{programCtrl.getArrondissement(arr).arrondissement}}</span>
+
+            <div ng-if="dept.arrondissement.length > 0"
+               ng-repeat="village in programCtrl.getArrondissement(arr).villages">
+              <span  class="item-note">{{village}}</span><br>
+            </div>
+          </p>
+        </div>
+
+
+        <!--<a class="item item-icon-right assertive" href="#">
+          <i class="icon ion-android-share"></i>
+          Partager
+        </a>-->
+
+      </div>
+
+
+    </div>
+
+
+  </ion-content>
+  <button class="button button-float">
+    <i class="icon ion-plus"></i>
+  </button>
+</ion-view>

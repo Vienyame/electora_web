@@ -1,7 +1,7 @@
 /**
  * Created by Serge on 26/01/2016.
  */
-angular.module('electora.program',[])
+angular.module('electora.program', [])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
@@ -9,8 +9,18 @@ angular.module('electora.program',[])
         url: '/program',
         views: {
           'menuContent': {
-            templateUrl: 'js/components/program/src/program.html',
-            controller: 'ProgramCtrl'
+            templateUrl: 'js/components/program/src/programs.html',
+            controller: 'ProgramController as programCtrl'
+          }
+        }
+      }
+    )
+      .state('app.departements', {
+        url: '/departements',
+        views: {
+          'menuContent': {
+            templateUrl: 'js/components/program/src/departements.html',
+            controller: 'ProgramController as programCtrl'
           }
         }
       })
@@ -19,7 +29,7 @@ angular.module('electora.program',[])
         views: {
           'menuContent': {
             templateUrl: 'js/components/program/src/program.html',
-            controller: 'ProgramCtrl'
+            controller: 'ProgramController as programCtrl'
           }
         }
       })

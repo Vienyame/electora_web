@@ -1,7 +1,7 @@
 [
   {
     "_id":"01",
-    "arrondissement":"Azowlisse",
+    "arrondissement":"Arrondissement d'Azowlisse",
     "villages":[
       "Kadébou-Zounmè",
       "Klogbomey",
@@ -23,35 +23,35 @@
   },
   {
     "_id":"02",
-    "arrondissement":"Adjarra 1",
+    "arrondissement":"Arrondissement d'Adjarra 1",
     "villages":[
       "Adovié"
     ]
   },
   {
     "_id":"03",
-    "arrondissement":"Cana II",
+    "arrondissement":"Arrondissement de Cana II",
     "villages":[
       "Agouna"
     ]
   },
   {
     "_id":"04",
-    "arrondissement":"Djakotomey II",
+    "arrondissement":"Arrondissement de Djakotomey II",
     "villages":[
       "Babohoué"
     ]
   },
   {
     "_id":"05",
-    "arrondissement":"Bougou",
+    "arrondissement":"Arrondissement de Bougou",
     "villages":[
       "Bougou  Fana"
     ]
   },
   {
     "_id":"06",
-    "arrondissement":"Oumako",
+    "arrondissement":"Arrondissement d'Oumako",
     "villages":[
       "Djacoté"
     ]

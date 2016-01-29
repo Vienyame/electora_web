@@ -1,42 +1,40 @@
-<!--<ion-view>-->
-<ion-modal-view>
+<ion-view>
   <ion-header-bar class="bar-balanced">
     <h1 class="title">Login</h1>
 
     <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+      <button class="button button-clear" ng-click="loginCtrl.closeLogin()">Close</button>
     </div>
   </ion-header-bar>
   <ion-content class="login" layout="column" layout-align="center center">
     <!--
     <h3 class="title-header"><img class="title-image" src="img/SII.png" width="43" height="23"/> Bienvenue sur Electora</h3>
     -->
-    <form ng-submit="doLogin()">
-    <div class="card">
-      <label class="item-input">
-        <span class="input-label" style="text-align: right;"><b>Compte</b></span>
-        <input type="text" ng-model="loginCtrl.login.username" placeholder="Utilisateur">
-      </label>
-      <label class="item-input">
-        <span class="input-label" style="text-align: right;"><b>Mot de passe</b></span>
-        <input type="password" ng-model="loginCtrl.login.password" placeholder="Saisir votre mot de passe">
-      </label>
+    <div ng-submit="loginCtrl.onLogin()">
+      <div class="card">
+        <label class="item-input">
+          <span class="input-label" style="text-align: right;"><b>Compte</b></span>
+          <input type="text" ng-model="loginCtrl.login.username" placeholder="Utilisateur">
+        </label>
+        <label class="item-input">
+          <span class="input-label" style="text-align: right;"><b>Mot de passe</b></span>
+          <input type="password" ng-model="loginCtrl.login.password" placeholder="Saisir votre mot de passe">
+        </label>
 
-      <div layout="row" class="item-input">
-        <span class="input-label" style="text-align: right;"><b>Profil</b></span>
-        <select placeholder="Agence" ng-model="loginCtrl.login.profil" style="padding: 0;">
-          <option ng-repeat="profil in loginCtrl.profils" ng-value="profil">{{profil.name}}</option>
-        </select>
+        <div layout="row" class="item-input">
+          <span class="input-label" style="text-align: right;"><b>Profil</b></span>
+          <select placeholder="Profil" ng-model="loginCtrl.login.profil" style="padding: 0;">
+            <option ng-repeat="profil in loginCtrl.profils" ng-value="profil">{{profil.name}}</option>
+          </select>
+        </div>
+        <label class="">
+          <button ng-click="loginCtrl.onLogin()" class="button button-block button-balanced">Se connecter</button>
+        </label>
+        <!--     <div layout="row" layout-align="center center">
+                <ion-checkbox>Se souvenir de moi</ion-checkbox>
+            </div> -->
+        <p style="color: red; text-align: center;">{{loginCtrl.errorMsg}}</p>
       </div>
-      <label class="">
-        <button class="button button-block button-balanced" ng-click="loginCtrl.onLogin()">Se connecter</button>
-      </label>
-      <!--     <div layout="row" layout-align="center center">
-              <ion-checkbox>Se souvenir de moi</ion-checkbox>
-          </div> -->
-      <p style="color: red; text-align: center;">{{loginCtrl.errorMsg}}</p>
     </div>
-</form>
   </ion-content>
-  <!--</ion-view>-->
-</ion-modal-view>
+</ion-view>

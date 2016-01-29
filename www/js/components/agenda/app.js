@@ -10,8 +10,17 @@ angular.module('electora.agenda',[])
         views: {
           'menuContent': {
             templateUrl: 'js/components/agenda/src/agenda.html',
-            controller: 'AgendaController',
-            $$controllerAs:'agendaCtrl'
+            controller: 'AgendaController as agendaCtrl',
+            controllerAs:'aAgendaCtrl'
+          }
+        }
+      })
+      .state('app.prgm_detail', {
+        url: '/agenda/:agendaId',
+        views: {
+          'menuContent': {
+            templateUrl: 'js/components/agenda/src/agendaDetails.html',
+            controller: 'agendaCtrl'
           }
         }
       })

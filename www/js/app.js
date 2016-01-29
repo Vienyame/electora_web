@@ -41,16 +41,8 @@ angular.module('electora', [
       .state('app', {
         url: '/app',
         abstract: true,
-        templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl'
-      })
-      .state('app.search', {
-        url: '/search',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/search.html'
-          }
-        }
+        templateUrl: 'templates/menu.html'/*,
+        controller: 'AppCtrl'*/
       })
       .state('app.browse', {
         url: '/browse',
@@ -62,5 +54,5 @@ angular.module('electora', [
       })
     ;
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/agenda');
+    $urlRouterProvider.otherwise('/login');
   });

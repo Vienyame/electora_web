@@ -2,15 +2,43 @@
  * Created by Serge on 26/01/2016.
  */
 angular.module('electora.program')
-  .controller('ProgramCtrl', function ($scope) {
-    $scope.playlists = [
-      {title: 'Aného', id: 1},
-      {title: 'Quartier de Bê', id: 2},
-      {title: 'Adigogomé', id: 3},
-      {title: 'Pkalimé', id: 4},
-      {title: 'Sokodé', id: 5},
-      {title: 'Kara', id: 6}
-    ];
-  })
-  .controller('ProgramCtrl', function ($scope, $stateParams) {
-  })
+  .controller('ProgramController', function ($scope, ArrondissementService, DepartementService, ThemeService) {
+
+    var programCtrl = this;
+
+    ArrondissementService.getArdmt()
+      .then(function (obj) {
+        console.log(obj);
+        programCtrl.arrondissements = obj;
+      });
+
+    DepartementService.getDptmt()
+      .then(function (obj) {
+        console.log(obj);
+        console.log(obj);
+        programCtrl.departements = obj;
+      });
+
+    programCtrl.getArrondissement = function (index) {
+      var ar = "";
+      angular.forEach(programCtrl.arrondissements, function (ardmt) {
+
+        if (ardmt._id === index) {
+          ar = ardmt;
+        }
+      });
+      return ar;
+
+    }
+
+
+    ThemeService.getTheme()
+      .then(function (obj) {
+        console.log(obj);
+        programCtrl.themes = obj;
+      });
+
+
+  }
+)
+;

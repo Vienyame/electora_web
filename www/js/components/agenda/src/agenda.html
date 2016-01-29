@@ -1,20 +1,46 @@
 <ion-view view-title="Agenda">
-  <ion-content>
-    <div>{{agendaCtrl.Events[0]}}</div>
+  <ion-content style="background-color: silver">
 
     <div ng-repeat="event in agendaCtrl.Events">
-      <div class="card">
-        <div class="item item-divider">
+      <!--<div class="card">
+        <div class="item item-divider item-balanced">
           {{event.name}}
         </div>
         <div class="item item-text-wrap">
           This is a basic Card with some text.
         </div>
         <div class="item item-divider">
-          I'm a Footer in a Card!
+          {{event.date_programme}} à {{event.heure_programme}}
         </div>
+      </div>-->
+
+
+      <div class="list card">
+
+        <div class="item item-avatar ">
+          <h1 class="">{{event.name}}</h1>
+
+          <p>{{event.date_programme}} à {{event.heure_programme}}</p>
+        </div>
+
+        <div class="item ">
+          <p>This is a basic Card with some text.</p>
+        </div>
+
+
+        <a class="item item-icon-right assertive" href="#">
+          <i class="icon ion-android-share"></i>
+          Partager
+        </a>
+
       </div>
+
+
     </div>
 
+
   </ion-content>
+  <button class="button button-float">
+    <i class="icon ion-plus"></i>
+  </button>
 </ion-view>

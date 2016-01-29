@@ -3,54 +3,72 @@
     "_id": "01",
     "name": "evenement 1",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"22/03/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "02",
-    "name": "evenement 1",
+    "name": "evenement 2",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"30/03/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "03",
-    "name": "evenement 1",
+    "name": "evenement 3",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"01/04/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "04",
-    "name": "evenement 1",
+    "name": "evenement 4",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"12/04/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "05",
-    "name": "evenement 1",
+    "name": "evenement 5",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"15/04/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "06",
-    "name": "evenement 1",
+    "name": "evenement 6",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"20/04/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "07",
-    "name": "evenement 1",
+    "name": "evenement 7",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"26/04/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "08",
-    "name": "evenement 1",
+    "name": "evenement 8",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"30/04/2016",
+    "heure_programme":"16H00"
   },
   {
     "_id": "09",
-    "name": "evenement 1",
+    "name": "evenement 9",
     "date_creation": "22/01/2016",
-    "heure_creation": "15H00"
+    "heure_creation": "15H00",
+    "date_programme":"10/05/2016",
+    "heure_programme":"16H00"
   }
 ]

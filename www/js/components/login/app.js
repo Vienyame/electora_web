@@ -1,9 +1,9 @@
-angular.module('electora.login', [])
+angular.module('electora.login', ['ionic'])
 
   .config(function($stateProvider) {
     $stateProvider
 
-      .state('app.login', {
+      .state('login', {
         url: '/login',
         abstract: true,
         templateUrl: 'js/components/login/src/index.html'
@@ -14,7 +14,8 @@ angular.module('electora.login', [])
         views: {
           'formContent': {
             templateUrl: 'js/components/login/src/form.html',
-            controller: 'LoginController as loginCtrl'
+            controller: 'LoginController as loginCtrl',
+            controllerAs:'loginCtrl'
           }
         }
       });
